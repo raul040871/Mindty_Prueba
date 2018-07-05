@@ -1,0 +1,40 @@
+**DAVID**
+GET
+curl http://localhost:8080/MindtyREST/api/cursos -v
+
+POST
+curl -H "Content-Type: application/json" -X POST -d '{"idCurso":0,"nombreCurso":"Prueba","codCurso":"ABC 12345","horasCurso":"210","formador":"5"}' http://localhost:8080/MindtyREST/api/cursos -v
+
+GET
+curl http://localhost:8080/MindtyREST/api/cursos/1 -v
+
+
+
+**RAUL**
+GET:
+curl GET http://localhost:8080/MindtyREST/api/cursos/1/modulos
+
+PUT:
+curl -X POST http://localhost:8080/MindtyREST/api/cursos/2/modulos
+
+DELETE
+curl -X DELETE http://localhost:8080/MindtyREST/api/cursos/1/modulos/2
+
+
+
+**IVAN**
+POST
+curl -H "Content-Type: application/json" -X POST -d '{"idu":0,"nombreUsuario":" ","password":" ","email":" ","telefono":" ","tipo":" "}' http://localhost:9090/MindtyREST/api/usuarios
+
+GET
+curl  http://localhost:9090/MindtyREST/api/usuarios
+
+GET
+curl  http://localhost:9090/MindtyREST/api/usuarios/5
+
+GET
+curl  http://localhost:9090/MindtyREST/api/usuarios/8
+
+**HECTOR**
+get
+curl GET http://localhost:8080/MindtyREST/api/cursos/1/modulos/1/unidades
